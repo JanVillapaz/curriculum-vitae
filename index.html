@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>Jan Villapaz - CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <style>
@@ -15,37 +15,55 @@
             max-width: 1000px;
             margin: auto;
         }
+
         h1, h2 {
             border-bottom: 1px solid #00ff00;
             padding-bottom: 5px;
             margin-top: 40px;
         }
+
         a {
             color: #00ff00;
             text-decoration: underline;
         }
+
         ul {
             list-style-type: square;
             padding-left: 20px;
         }
+
         .section {
             margin-top: 30px;
         }
+
         .contact {
             margin-bottom: 30px;
         }
+
         .job-title {
             font-weight: bold;
         }
+
         .location-date {
             font-style: italic;
             color: #66ff66;
+        }
+
+        .blink {
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
         }
     </style>
 </head>
 <body>
 
-<h2>janvillapaz@terminal-cv:~$ cat jan_villapaz_resume.txt <span class="blink">▌</span></h2>
+<h1>janvillapaz@terminal-cv:~$ cat jan_villapaz_resume.txt <span class="blink">▌</span></h1>
+
 <div class="contact">
     <p>📍 Montreal, QC</p>
     <p>✉️ <a href="mailto:janvillapaz@outlook.com">janvillapaz@outlook.com</a></p>
@@ -60,46 +78,29 @@
 </p>
 
 <h2>Education</h2>
-<p><span class="job-title">BASc in Computer Science & Software Engineering</span> — Université du Québec à Montréal (2018–2023)</p>
-<p>Coursework: OOP 1 & 2, Algorithms, Software Architecture, Databases, System Hardware, Information Systems, and more.</p>
+<p><span class="job-title">BASc in Computer Science & Software Engineering</span> — Université du Québec à Montréal
+    (2018–2023)</p>
 
 <h2>Experience</h2>
 
 <div class="section">
     <p class="job-title">Software Developer @ Ticketpro</p>
     <p class="location-date">Montreal, QC | Apr 2023 – Present</p>
-    <ul>
-        <li>Migrated features from a legacy application to Angular 2.</li>
-        <li>Upgraded Spring Boot from 2.6 to 3.0.</li>
-        <li>Improved quality and performance of both legacy and modern applications.</li>
-    </ul>
 </div>
 
 <div class="section">
     <p class="job-title">Full-Stack Developer Intern @ Société Générale</p>
     <p class="location-date">Montreal, QC | Sept 2022 – Apr 2023</p>
-    <ul>
-        <li>Built an internal hybrid workspace marketplace platform with interactive office maps.</li>
-        <li>Worked on innovation-focused environmental awareness committee projects.</li>
-    </ul>
 </div>
 
 <div class="section">
     <p class="job-title">System Integration Tester Intern @ Genetec</p>
     <p class="location-date">Montreal, QC | May 2022 – Aug 2022</p>
-    <ul>
-        <li>Improved testing strategies and defect tracking in an Agile environment.</li>
-        <li>Integrated Security Desk into NEC ExpressCluster VMs using internal documentation.</li>
-    </ul>
 </div>
 
 <div class="section">
     <p class="job-title">Information Technologist Intern @ Adacel, Inc</p>
     <p class="location-date">Montreal, QC | Jan 2021 – May 2021</p>
-    <ul>
-        <li>Migrated on-site desktops to laptops for company-wide remote transition.</li>
-        <li>Managed Active Directory, DNS, VPN, and hardware systems.</li>
-    </ul>
 </div>
 
 <h2>Additional Experience</h2>
