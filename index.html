@@ -1,111 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Jan Villapaz - CV</title>
+    <meta charset="UTF-8"/>
+    <title>Jan Villapaz - Retro CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #000000;
+            --fg: #00ff00;
+            --cursor: #00ff00;
+        }
+
         body {
-            background-color: #000;
-            color: #00ff00;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--fg);
             font-family: 'Fira Code', monospace;
             font-size: 16px;
             line-height: 1.6;
-            padding: 40px;
+            padding: 2rem;
+            white-space: pre-wrap;
+        }
+
+        .terminal {
             max-width: 1000px;
             margin: auto;
         }
+
         h1, h2 {
-            border-bottom: 1px solid #00ff00;
-            padding-bottom: 5px;
-            margin-top: 40px;
+            border-bottom: 1px solid var(--fg);
+            padding-bottom: 4px;
         }
+
         a {
-            color: #00ff00;
+            color: var(--fg);
             text-decoration: underline;
         }
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
+
+        .blink {
+            animation: blink 1s step-end infinite;
         }
-        .section {
-            margin-top: 30px;
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
         }
-        .contact {
-            margin-bottom: 30px;
+
+        .toggle-btn, .download-btn {
+            background: none;
+            border: 1px solid var(--fg);
+            color: var(--fg);
+            padding: 0.4rem 0.8rem;
+            margin-right: 1rem;
+            font-family: 'Fira Code', monospace;
+            cursor: pointer;
         }
-        .job-title {
-            font-weight: bold;
+
+        .button-row {
+            margin-bottom: 2rem;
         }
-        .location-date {
-            font-style: italic;
-            color: #66ff66;
+
+        /* Light mode */
+        .light-mode {
+            --bg: #ffffff;
+            --fg: #222222;
+            --cursor: #222222;
         }
     </style>
 </head>
 <body>
 
-<h1>Jan Villapaz</h1>
-<div class="contact">
+<div class="terminal">
+
+    <div class="button-row">
+        <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light</button>
+        <a class="download-btn" href="JAN_VILLAPAZ_EN_CV.pdf" download>Download PDF</a>
+    </div>
+
+    <h1>Jan Villapaz</h1>
     <p>📍 Montreal, QC</p>
     <p>✉️ <a href="mailto:janvillapaz@outlook.com">janvillapaz@outlook.com</a></p>
     <p>💼 <a href="https://linkedin.com/in/janvillapaz" target="_blank">linkedin.com/in/janvillapaz</a></p>
     <p>👨‍💻 <a href="https://github.com/janvillapaz" target="_blank">github.com/janvillapaz</a></p>
+
+    <h2>Profile</h2>
+    <p>Software Developer with over two years of experience building and maintaining applications. Looking for an
+        opportunity to solve meaningful problems and grow technically.</p>
+
+    <h2>Education</h2>
+    <p><strong>BASc in Computer Science & Software Engineering</strong> — UQAM (2018–2023)</p>
+
+    <h2>Experience</h2>
+    <p><strong>Software Developer @ Ticketpro</strong> — Montreal, QC | Apr 2023 – Present</p>
+
+    <p><strong>Full-Stack Developer Intern @ Société Générale</strong> — Sept 2022 – Apr 2023</p>
+
+    <p><strong>System Integration Tester Intern @ Genetec</strong> — May 2022 – Aug 2022</p>
+
+    <p><strong>Information Technologist Intern @ Adacel</strong> — Jan 2021 – May 2021</p>
+
+    <h2>Skills & Tools</h2>
+    <ul>
+        <li>Java, Spring Boot, Python, Angular, REST</li>
+        <li>Git, SQL, PostgreSQL, Agile, Linux</li>
+    </ul>
+
+    <h2>Languages</h2>
+    <p>English, French, Tagalog</p>
+
+    <h2>References</h2>
+    <p>Available upon request.</p>
+
+    <p><span class="blink">▌</span></p>
 </div>
 
-<h2>Profile</h2>
-<p>
-    Software Developer with over two years of experience building and maintaining applications in multiple tech stacks.
-    I am looking for a role that challenges my skills and allows me to contribute to high-impact development projects.
-</p>
-
-<h2>Education</h2>
-<p><span class="job-title">BASc in Computer Science & Software Engineering</span> — Université du Québec à Montréal (2018–2023)</p>
-
-<h2>Experience</h2>
-
-<div class="section">
-    <p class="job-title">Software Developer @ Ticketpro</p>
-    <p class="location-date">Montréal, QC | Apr 2023 – Present</p>
-</div>
-
-<div class="section">
-    <p class="job-title">Full-Stack Developer Intern @ Société Générale</p>
-    <p class="location-date">Montréal, QC | Sept 2022 – Apr 2023</p>
-</div>
-
-<div class="section">
-    <p class="job-title">System Integration Tester Intern @ Genetec</p>
-    <p class="location-date">Montréal, QC | May 2022 – Aug 2022</p>
-</div>
-
-<div class="section">
-    <p class="job-title">Information Technologist Intern @ Adacel, Inc</p>
-    <p class="location-date">Montréal, QC | Jan 2021 – May 2021</p>
-</div>
-
-<h2>Additional Experience</h2>
-<ul>
-    <li>Desktop Support Specialist @ Adacel, Inc (May 2021 – May 2022)</li>
-    <li>Service Desk Analyst L1 @ Fujitsu Americas (Jun 2019 – Nov 2020)</li>
-</ul>
-
-<h2>Technologies</h2>
-<ul>
-    <li><strong>Languages:</strong> Java, C++, Python, JavaScript</li>
-    <li><strong>Web:</strong> HTML5, CSS3, Bootstrap, React, Angular 2, REST APIs</li>
-    <li><strong>Frameworks:</strong> Spring Core, Spring Boot</li>
-    <li><strong>Tools:</strong> Git, Maven</li>
-    <li><strong>Databases:</strong> PostgreSQL, SQLite</li>
-    <li><strong>OS:</strong> Linux, Windows, macOS</li>
-    <li><strong>Methodologies:</strong> Agile, Scrum</li>
-</ul>
-
-<h2>Languages</h2>
-<p>English, French, Tagalog</p>
-
-<h2>References</h2>
-<p>Available upon request.</p>
+<script>
+    function toggleMode() {
+        document.body.classList.toggle('light-mode');
+    }
+</script>
 
 </body>
 </html>
