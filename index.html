@@ -58,68 +58,114 @@
                 opacity: 0;
             }
         }
+
+        .monitor {
+            background-color: #000;
+            border: 12px solid #333;
+            border-radius: 16px;
+            padding: 30px;
+            0 0 0 5px #111;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .monitor::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                    to bottom,
+                    rgba(0, 255, 0, 0.02),
+                    rgba(0, 255, 0, 0.02) 2px,
+                    transparent 2px,
+                    transparent 4px
+            );
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .monitor::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, rgba(0, 255, 0, 0.08) 0%, transparent 70%);
+            z-index: 1;
+        }
+
     </style>
 </head>
 <body>
 
-<h1>janvillapaz@terminal-cv:~$ cat jan_villapaz_resume.txt <span class="blink">▌</span></h1>
 
-<div class="contact">
-    <p>📍 Montreal, QC</p>
-    <p>✉️ <a href="mailto:janvillapaz@outlook.com">janvillapaz@outlook.com</a></p>
-    <p>💼 <a href="https://linkedin.com/in/janvillapaz" target="_blank">linkedin.com/in/janvillapaz</a></p>
-    <p>👨‍💻 <a href="https://github.com/janvillapaz" target="_blank">github.com/janvillapaz</a></p>
+<div class="monitor">
+
+    <h1>janvillapaz@terminal-cv:~$ cat jan_villapaz_resume.txt <span class="blink">▌</span></h1>
+
+    <div class="contact">
+        <p>📍 Montreal, QC</p>
+        <p>✉️ <a href="mailto:janvillapaz@outlook.com">janvillapaz@outlook.com</a></p>
+        <p>💼 <a href="https://linkedin.com/in/janvillapaz" target="_blank">linkedin.com/in/janvillapaz</a></p>
+        <p>👨‍💻 <a href="https://github.com/janvillapaz" target="_blank">github.com/janvillapaz</a></p>
+    </div>
+
+    <h2>Profile</h2>
+    <p>
+        Software Developer with over two years of experience building and maintaining applications in multiple tech
+        stacks.
+        I am looking for a role that challenges my skills and allows me to contribute to high-impact development
+        projects.
+    </p>
+
+    <h2>Education</h2>
+    <p><span class="job-title">BASc in Computer Science & Software Engineering</span> — Université du Québec à Montréal
+        (2018–2023)</p>
+
+    <h2>Experience</h2>
+
+    <div class="section">
+        <p class="job-title">Software Developer @ Ticketpro</p>
+        <p class="location-date">Montreal, QC | Apr 2023 – Present</p>
+    </div>
+
+    <div class="section">
+        <p class="job-title">Full-Stack Developer Intern @ Société Générale</p>
+        <p class="location-date">Montreal, QC | Sept 2022 – Apr 2023</p>
+    </div>
+
+    <div class="section">
+        <p class="job-title">System Integration Tester Intern @ Genetec</p>
+        <p class="location-date">Montreal, QC | May 2022 – Aug 2022</p>
+    </div>
+
+    <div class="section">
+        <p class="job-title">Information Technologist Intern @ Adacel, Inc</p>
+        <p class="location-date">Montreal, QC | Jan 2021 – May 2021</p>
+    </div>
+
+    <h2>Additional Experience</h2>
+    <ul>
+        <li>Desktop Support Specialist @ Adacel, Inc (May 2021 – May 2022)</li>
+        <li>Service Desk Analyst L1 @ Fujitsu Americas (Jun 2019 – Nov 2020)</li>
+    </ul>
+
+    <h2>Skills & Tools</h2>
+    <ul>
+        <li>Java, Spring Boot, Python, Angular, REST</li>
+        <li>Git, SQL, PostgreSQL, Agile, Linux</li>
+    </ul>
+
+    <h2>Languages</h2>
+    <p>English, French, Tagalog</p>
+
+    <h2>References</h2>
+    <p>Available upon request.</p>
+
 </div>
-
-<h2>Profile</h2>
-<p>
-    Software Developer with over two years of experience building and maintaining applications in multiple tech stacks.
-    I am looking for a role that challenges my skills and allows me to contribute to high-impact development projects.
-</p>
-
-<h2>Education</h2>
-<p><span class="job-title">BASc in Computer Science & Software Engineering</span> — Université du Québec à Montréal
-    (2018–2023)</p>
-
-<h2>Experience</h2>
-
-<div class="section">
-    <p class="job-title">Software Developer @ Ticketpro</p>
-    <p class="location-date">Montreal, QC | Apr 2023 – Present</p>
-</div>
-
-<div class="section">
-    <p class="job-title">Full-Stack Developer Intern @ Société Générale</p>
-    <p class="location-date">Montreal, QC | Sept 2022 – Apr 2023</p>
-</div>
-
-<div class="section">
-    <p class="job-title">System Integration Tester Intern @ Genetec</p>
-    <p class="location-date">Montreal, QC | May 2022 – Aug 2022</p>
-</div>
-
-<div class="section">
-    <p class="job-title">Information Technologist Intern @ Adacel, Inc</p>
-    <p class="location-date">Montreal, QC | Jan 2021 – May 2021</p>
-</div>
-
-<h2>Additional Experience</h2>
-<ul>
-    <li>Desktop Support Specialist @ Adacel, Inc (May 2021 – May 2022)</li>
-    <li>Service Desk Analyst L1 @ Fujitsu Americas (Jun 2019 – Nov 2020)</li>
-</ul>
-
-<h2>Skills & Tools</h2>
-<ul>
-    <li>Java, Spring Boot, Python, Angular, REST</li>
-    <li>Git, SQL, PostgreSQL, Agile, Linux</li>
-</ul>
-
-<h2>Languages</h2>
-<p>English, French, Tagalog</p>
-
-<h2>References</h2>
-<p>Available upon request.</p>
-
 </body>
 </html>
