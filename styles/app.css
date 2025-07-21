@@ -91,3 +91,20 @@ ul {
     background: radial-gradient(ellipse at center, rgba(0, 255, 0, 0.08) 0%, transparent 70%);
     z-index: 1;
 }
+
+.links-horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.links-horizontal a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+.links-horizontal span {
+    font-weight: bold;
+}
