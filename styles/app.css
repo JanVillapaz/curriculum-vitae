@@ -105,6 +105,12 @@ ul {
     color: inherit;
     font-weight: bold;
 }
+
 .links-horizontal span {
     font-weight: bold;
+}
+
+.links-horizontal {
+    position: relative;
+    z-index: 3;
 }
